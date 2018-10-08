@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.masho.calculator.Calculator">
+
+<TextView
+    android:id="@+id/CalHeading"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Calculator"
+    android:gravity="center"
+    android:textColor="#000"
+    android:textStyle="bold"
+    android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/NumberOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/CalHeading"
+        android:layout_marginTop="50dp"
+        android:hint="Enter 1st Number"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/NumberTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/NumberOne"
+        android:layout_marginTop="30dp"
+        android:hint="Enter 2nd Number"
+        android:textColorHint="#000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/NumberTwo"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="92dp"
+        android:background="#000"
+        android:text="Add"
+        android:textColor="#FF9200" />
+
+    <Button
+        android:id="@+id/buttonSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonAdd"
+        android:layout_alignBottom="@+id/buttonAdd"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="65dp"
+        android:layout_marginRight="65dp"
+        android:background="#000"
+        android:textColor="#FF9200"
+        android:text="Sub" />
+
+    <Button
+        android:id="@+id/buttonMul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        android:textColor="#FF9200"
+        android:layout_alignLeft="@+id/buttonAdd"
+        android:layout_alignStart="@+id/buttonAdd"
+        android:layout_below="@+id/buttonAdd"
+        android:layout_marginTop="64dp"
+        android:text="Mul" />
+
+    <Button
+        android:id="@+id/buttonDiv"
+        android:layout_width="wrap_content"
+        android:background="#000"
+        android:textColor="#FF9200"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonMul"
+        android:layout_alignLeft="@+id/buttonSub"
+        android:layout_alignStart="@+id/buttonSub"
+        android:text="Div" />
+
+    <TextView
+        android:id="@+id/resulttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Answer"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/NumberTwo"
+        android:layout_marginTop="15dp"/>
+
+</RelativeLayout>
